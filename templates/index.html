@@ -10,12 +10,14 @@
 <body>
 <form method="post">
     <label for="url">Url</label>
-    <label>
-        <input type="text" name="url" autocomplete="off" required>
-    </label><br>
+{#        <label>#}
+{#            <input type="text" name="urls" autocomplete="off" required>#}
+{#        </label><br>#}
+    <textarea id="urls" name="urls" rows="10" cols="50" autocomplete="off"
+                                required></textarea><br>
     <input type="submit" value="Submit">
 </form>
-<p>存在暗链地址：{{ url }}</p>
+<p>存在暗链地址：{{ urls }}</p>
 <p>匹配关键字：{{ rules }}</p>
 </body>
 </html>
